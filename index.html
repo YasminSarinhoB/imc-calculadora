@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="screen">
+                <h1>Calculadora de IMC</h1>
+    
+                <form>
+                    <div class="input-group">
+                        <label>Digite sua Altura (cm)</label>
+                        <input 
+                        required
+                        type="number" 
+                        name="text" 
+                        autocomplete="off" 
+                        class="input input-heigth"
+                        id="heigth"  />
+                    </div>
+    
+                    <div class="input-group">
+                        <label>Digite seu peso (kg) </label>
+                        <input 
+                        required="" 
+                        type="number" 
+                        name="text" 
+                        class="input input-weigth">
+                    </div>
+    
+                    <button class="button"> Calcular </button>
+                </form>
+            </div>
+    
+            <div class="result hide">
+                <h1>O resultado do seu IMC é <span class="resultCalc">18</span></h1>
+                <h2 class="resultTable"></h2>
+    
+                <button class="buttonTry btn"> Voltar</button>
+                
+            </div>
+    
+        </main>
+    </div>
+    
+    
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
